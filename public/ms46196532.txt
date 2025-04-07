@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "fasocode.app",
+  "Id": "15a581dd-5c90-47ac-840d-8d071d4f4024"
+}
