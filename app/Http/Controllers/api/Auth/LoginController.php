@@ -329,6 +329,7 @@ class LoginController extends Controller
 
 
     }
+    
     public function question(Request $request){
         // dd($request->language);
         $img_zip=array();
@@ -337,7 +338,8 @@ class LoginController extends Controller
                 return response()->json(['status' => false,'message' => "Language id is required"]); 
             }
             $language = $request->language;
-            $exams = Section::where('id',7)->get();
+            // $exams = Section::where('id',7)->get();
+            $exams = Section::all();
             $exam_data = array();
 
             $audioFilesTotalSize = 0;
